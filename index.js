@@ -8,7 +8,7 @@ const config = require("./config.json");
 
 // Read news from RSS-feed
 axios.get(config.urls.rss).then(response => {
-	// success --> parse news
+	// Parse rss-feed
 	xml2js(response.data, (error, result) => {
 		if (error) {
 			console.log("Error parsing feed: " + error);

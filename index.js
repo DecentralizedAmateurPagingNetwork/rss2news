@@ -63,10 +63,10 @@ axios.get(config.urls.rss).then(response => {
 					rubricName: "dapnet-news",
 					number: newsItem.number
 				}
-			}).then(responseSend => {
+			}).then(() => {
 				console.log("Added news-item \"" + newsItem.title + "\" to DAPNET.");
-			}).catch(errorSend => {
-				console.log("Error posting news to DAPNET: " + errorSend);
+			}).catch(error => {
+				console.log("Error posting news to DAPNET: " + error);
 			});
 		});
 	});

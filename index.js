@@ -34,7 +34,7 @@ axios.get(config.urls.rss).then(response => {
 		if (fs.existsSync("./saved.json")) {
 			const savedData = require("./saved.json");
 
-			if (JSON.stringify(savedData) === JSON.stringify(news)) {
+			if (JSON.stringify(savedData) === JSON.stringify(news) && process.argv[2] !== "--force") {
 				// Nothing changed
 				console.log("No changes. Exiting...");
 				process.exit(0);

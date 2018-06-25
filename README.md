@@ -36,5 +36,12 @@ Add the command below to a cronjob to ensure, that the script will run regularly
 
 ## Run
 ```bash
-npm start
+node index.js
+```
+
+### Force Update
+Ignores the `saved.json` file and updates the DAPNET news entries regardless.
+
+```bash
+node index.js --force
 ```

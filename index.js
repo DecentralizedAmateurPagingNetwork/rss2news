@@ -60,7 +60,7 @@ axios.get(config.urls.rss).then(response => {
 				},
 				data: {
 					text: newsItem.title,
-					rubricName: "dapnet-news",
+					rubricName: config.dapnet.rubricname,
 					number: newsItem.number
 				}
 			}).then(() => {

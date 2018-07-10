@@ -25,6 +25,7 @@ Create a `config.json` file using the template below and fill in the needed info
 		"dapnet": "https://hampager.de/api/news"
 	},
 	"dapnet": {
+		"rubricname": "dapnet-news",
 		"username": "my-user",
 		"password": "my-secret-password"
 	}
